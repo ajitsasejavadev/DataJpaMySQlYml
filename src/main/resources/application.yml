@@ -2,7 +2,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/springBoot
+    url: jdbc:mysql://localhost:3306/springBoot?useSSL=false
     username: root
     password: root
 ## ORM Details ##
@@ -13,4 +13,5 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL55Dialect
-    
+ ## Debugging ##
+##debug: true

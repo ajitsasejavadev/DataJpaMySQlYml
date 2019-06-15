@@ -2,11 +2,14 @@ package com.app.runner;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
 import com.app.model.Employee;
 import com.app.repositrory.EmployeeRepository;
 
-public class ConsoleRunner implements CommandLineRunner {
+
+@Component
+public class EmployeeRunner implements CommandLineRunner {
 	
 	@Autowired
 	private EmployeeRepository repo;

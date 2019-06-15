@@ -1,6 +1,7 @@
 package com.app.model;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -13,7 +14,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Employee {
-
+	
+	@Id
 	private Integer empId;
 	private String empName;
 	private Double empSal;
